@@ -32,6 +32,8 @@ class Program
 
         int somaDosTermos = a1 * (potencia - 1) / denominador;
 
-        return somaDosTermos;
+        if (q == 1) return a1 * n;
+
+        return a1 * ((int)Math.Pow(q, n) - 1) / (q - 1);
     }
 }
